@@ -20,15 +20,29 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import laravel from "./tech/laravel.png";
+import mysql from "./tech/mysql.png";
+import bootstrap from "./tech/bootstrap.png";
+import inertia from "./tech/inertia.png";
+import vue from "./tech/vue.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import jne from "./company/jne.png";
+import alfamart from "./company/alfamart.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import slip from "./slip.png";
+import request from "./request.png";
+import login from "./login.png";
+import arroyanna from "./arroyanna.png";
+import bimakarya from "./bimakarya.png";
+import cashier from "./cashier.png";
 
 export {
   logo,
@@ -43,12 +57,20 @@ export {
   docker,
   figma,
   git,
+  inertia,
+  vue,
   html,
+  laravel,
+  mysql,
+  bootstrap,
   javascript,
   mongodb,
   nodejs,
   reactjs,
   redux,
+  arroyanna,
+  bimakarya,
+  cashier,
   tailwind,
   typescript,
   threejs,
@@ -56,7 +78,12 @@ export {
   shopify,
   starbucks,
   tesla,
+  jne,
+  alfamart,
   carrent,
   jobit,
   tripguide,
+  slip,
+  request,
+  login,
 };

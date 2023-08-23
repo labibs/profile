@@ -9,19 +9,32 @@ import {
     css,
     reactjs,
     redux,
+    inertia,
+    vue,
+    arroyanna,
+    bimakarya,
+    cashier,
     tailwind,
     nodejs,
     mongodb,
     git,
+    laravel,
+    mysql,
+    bootstrap,
     figma,
     docker,
     meta,
     starbucks,
     tesla,
+    jne,
+    alfamart,
     shopify,
     carrent,
     jobit,
     tripguide,
+    slip,
+    request,
+    login,
     threejs,
 } from "../assets";
 
@@ -49,10 +62,7 @@ const services = [
         title: "Frontend Developer",
         icon: web,
     },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
+    
     {
         title: "Network Administrator",
         icon: creator,
@@ -69,6 +79,18 @@ const technologies = [
         icon: css,
     },
     {
+        name: "Laravel",
+        icon: laravel,
+    },
+    {
+        name: "Mysql",
+        icon: mysql,
+    },
+    {
+        name: "Bootstrap",
+        icon: bootstrap,
+    },
+    {
         name: "JavaScript",
         icon: javascript,
     },
@@ -80,10 +102,7 @@ const technologies = [
         name: "React JS",
         icon: reactjs,
     },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
+    
     {
         name: "Tailwind CSS",
         icon: tailwind,
@@ -93,78 +112,69 @@ const technologies = [
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "Inertia JS",
+        icon: inertia,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "Vue JS",
+        icon: vue,
     },
     {
         name: "git",
         icon: git,
     },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
+    
+    
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Team Progress",
+        company_name: "Alfamart",
+        icon: alfamart,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "November 2012 - November 2015",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Memastikan ketersediaan barang yang akan di ambil oleh team picker",
+            "dan memastikan stock barang sehingga tidak terjadi selisih antara data stock dan barang yang ada di gudang",
+            
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Team Inbound",
+        company_name: "JNE Cilacap",
+        icon: jne,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "November 2015 - Agustus 2017",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Menerima barang kiriman dari cabang lain",
+            "Menyortir per area pengantaran",
+            "Menyiapkan dan memastikan barang sesui dengan data kiriman yang akan di kirim oleh kurir",
+            
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Human Capital & General Affair",
+        company_name: "JNE Cilacap",
+        icon: jne,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Agustus 2017 - Jan 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Managememnt Karyawan Dan Asset",
+            "HC : Melakukan Proses Kekaryawanan meliputi psikotes, interview, training dan semua yang berhubungan dengan karyawan",
+            "GA : Melakukan Proses Management Asset meliputi, pengadaan, pendataan, perawatan dan smua yang berhubungan dengan Asset",
+            
+        ],
+    },
+    {
+        title: "IT",
+        company_name: "JNE Cilacap",
+        icon: jne,
+        iconBg: "#E6DEDD",
+        date: "Jan 2020 - Sekarang",
+        points: [
+            "Management System JNE",
+            "IT : Melakukan support system yang di pakai untuk kelangsungan kerja di JNE dari mulai software sampai hardware"
         ],
     },
 ];
@@ -172,84 +182,85 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
+            "Dengan adanya website company profile, perusahaan jadi terlihat lebih profesional dan mempermudah untuk pencarian vendor dan karyawan",
+        name: "Pak Imam",
+        designation: "Manager",
+        company: "PT. Bimakarya Kaloka",
         image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
+            "Dengan adanya aplikasi POS jadi memudahkan dalam menganalisa profit dan memberi motivasi kepada customer dengan system point",
+        name: "Mba Uus",
+        designation: "Owner",
+        company: "Ayun Farhan",
+        image: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
+    {
+        testimonial:
+            "Dengan adanya System Request Online jadi mempermudah dalam pemesanan dan pemantauan ATK agen, dan penangana GA juga jadi lebih tertib",
+        name: "Retno Adi Nugroho",
+        designation: "GA",
+        company: "JNE Cilacap",
         image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Slipgaji Online",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            
+            "Web untuk cek slipgaji, absensi, masa kerja, tunjangan beras, BPJS Kesehatan dan BPJS Ketenagakerjaan secara online,  tersedia riwayat 12 bulan, dan export PDF untuk Slipgaji ",
         tags: [
             {
-                name: "react",
+                name: "laravel",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "mysql",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "bootstrap",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: slip,
+        source_code_link: "https://jne-cilacap.com/slip/public/login",
     },
     {
-        name: "Job IT",
+        name: "Jaringan & CCTV",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Instalasi Jaringan internet dengan teknologi Mikrotik dan SDWAN, dengan menerapkan MAC Filtering dan Login Wifi, serta Instalasi CCTV online bisa pantau lewat HP lewat Aplikasi Yoosee",
         tags: [
             {
-                name: "react",
+                name: "Mikrotik",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "SDWAN",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "IP Cam",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: login,
+        source_code_link: "http://wifijne.net/login?dst=http%3A%2F%2Fwww.msftconnecttest.com%2Fredirect",
     },
     {
-        name: "Trip Guide",
+        name: "System Request",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Web untuk melayani Pemesanan ATK, Penanganan GA dan Penanganan IT, di sertai dashboard Realtime, Master Data Asset, Purchase Order, Management Stock ATK dan Laporan",
         tags: [
             {
-                name: "nextjs",
+                name: "Laravel",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "mysql",
                 color: "green-text-gradient",
             },
             {
@@ -257,8 +268,72 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: request,
+        source_code_link: "https://jne-cilacap.com/pesan/public/backend/login",
+    },
+    {
+        name: "Company Profile ",
+        description:
+            
+            "Web company profile, yang dilengkapi dengan frontend dan backend, tersedia juga menu vendor dan career untuk memberi kesempatan kepada vendor memasukan penawaran untuk bekerja sama dan memasukan lamaran bagi karyawan untuk melamar posisi yang tersedia",
+        tags: [
+            {
+                name: "laravel",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
+                color: "green-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: bimakarya,
+        source_code_link: "http://www.bimakaryakaloka.com/",
+    },
+    {
+        name: "Aplikasi POS ( hybrid )",
+        description:
+            "Apliaksi Point of Sale atau aplikasi cashier, yang di rancang untuk tersedia offline maupun online, dengan di sertai point pada setiap belanja, laporan penjualan, laporan profit, peringatan stock di bawah 10, grafik barang terlaris dan grafik penjualan mingguan ",
+        tags: [
+            {
+                name: "Inertia js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "vue js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Laravel",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cashier,
+        source_code_link: "",
+    },
+    {
+        name: "Website Sekolah",
+        description:
+            "Website profile sekolah yang di lengkapi dengan frontend dan backend, tersedia berbagai menu antara lain Berita, ekstrakurikuler, Visi & misi, pesan, kisah sukses alumni, program beasiswa, informasi dan tahap pendaftaran, tentang sekolah, dan kompetensi kelulusan",
+        tags: [
+            {
+                name: "Laravel",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: arroyanna,
+        source_code_link: "https://smkislamarroyyanna.sch.id/",
     },
 ];
 
