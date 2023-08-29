@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Tilt } from 'react-tilt'
 import { github } from '../assets'
 import { projects } from '../constans'
@@ -48,14 +48,28 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
   )
 }
 const Works = () => {
+  useEffect(() => {
+    // Ambil ID dari URL
+    const url = window.location.href;
+    const idIndex = url.indexOf('#');
+    if (idIndex !== -1) {
+      const id = url.slice(idIndex + 1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Gulir ke elemen dengan ID yang sesuai dengan offset negatif
+        element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', inlineFragment: 'nearest', offset: { top: -100 } });
+      }
+    }
+  }, []);
   return (
+    <div id="portofolio" className='mb-10'>
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           kARYA Saya
         </p>
           <h2 className={styles.sectionHeadText}>
-            Projects.
+            Portofolio.
           </h2>
       </motion.div>
       <div className="w-full flex">
@@ -74,6 +88,7 @@ const Works = () => {
         ))}
       </div>
     </>
+    </div>
   )
 }
 

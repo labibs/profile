@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 import { styles } from '../styles'
 import { EarthCanvas, StarsCanvas } from './canvas'
@@ -60,7 +60,21 @@ const Contact = () => {
     })
   }
 
+  useEffect(() => {
+    // Ambil ID dari URL
+    const url = window.location.href;
+    const idIndex = url.indexOf('#');
+    if (idIndex !== -1) {
+      const id = url.slice(idIndex + 1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Gulir ke elemen dengan ID yang sesuai dengan offset negatif
+        element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', inlineFragment: 'nearest', offset: { top: -100 } });
+      }
+    }
+  }, []);
   return (
+    <div id="contact" className='mb-10'>
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       
       <motion.div
@@ -122,7 +136,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
-
+      </div>
     </div>
   )
 }

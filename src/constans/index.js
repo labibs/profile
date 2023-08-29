@@ -40,15 +40,15 @@ import {
 
 export const navLinks = [
     {
-        id: "about",
+        id: "#about",
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "#portofolio",
+        title: "Portofolio",
     },
     {
-        id: "contact",
+        id: "#contact",
         title: "Contact",
     },
 ];
@@ -193,7 +193,7 @@ const testimonials = [
             "Dengan adanya aplikasi POS jadi memudahkan dalam menganalisa profit dan memberi motivasi kepada customer dengan system point",
         name: "Mba Uus",
         designation: "Owner",
-        company: "Ayun Farhan",
+        company: "Warung Ayun Farhan",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
